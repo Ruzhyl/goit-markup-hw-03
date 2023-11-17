@@ -3,6 +3,9 @@ body {
   color: #434455;
   background-color: #fff;
 }
+img {
+  display: block;
+}
 
 h1,
 h2,
@@ -87,6 +90,9 @@ ul {
   color: #2e2f42;
 }
 .menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   color: #2e2f42;
 }
@@ -124,8 +130,6 @@ ul {
 /* Header */
 
 .page-header {
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
   border-bottom: 1px solid #e7e9fc;
 }
 .page-header .page-logo {
@@ -156,6 +160,11 @@ ul {
 .contacts-item:not(:last-child) {
   margin-right: 40px;
 }
+.contacts-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 
 /* Section hero */
 .section-hero {
@@ -167,12 +176,10 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section-hero__title {
+  max-width: 496px;
   margin-bottom: 48px;
   text-align: center;
   font-size: 56px;
@@ -182,6 +189,7 @@ ul {
   color: #fff;
 }
 .section-hero__button {
+  min-width: 169px;
   width: max-content;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -191,18 +199,21 @@ ul {
 .benefits-list {
   display: flex;
 }
+.benefits-item {
+  width: calc((100% - 72px) / 4);
+}
 .benefits-item:not(:last-child) {
   margin-right: 24px;
 }
 .benefits-item__title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 /* Section team */
 .section-team {
   background-color: #f4f4fd;
 }
 .section-team__title {
-  margin-bottom: 76px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -219,13 +230,14 @@ ul {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-item__content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 32px 16px 32px 16px;
+  padding: 32px 0;
 }
 .team-item__title {
   margin-bottom: 8px;
+  text-align: center;
+}
+.team-item__description {
+  text-align: center;
 }
 /* Section portfolio */
 .section-portfolio__title {
@@ -257,7 +269,7 @@ ul {
 
 /* page-footer */
 .page-footer {
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: #2e2f42;
 }
@@ -272,10 +284,10 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.page-footer__info {
-  width: 264px;
+.page-footer__description {
+  max-width: 264px;
 }
 .page-footer .page-logo {
-  display: block;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
